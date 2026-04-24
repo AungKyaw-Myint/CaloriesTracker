@@ -1,164 +1,298 @@
-1. Project Overview
+# Calorie Tracker CLI (Java)
 
-The application is a Java CLI calorie tracker that allows users to record daily food intake, monitor calorie consumption, track basic macronutrients, and compare intake against personal goals.
+## 📌 Project Overview
 
-2. Purpose
+The **Calorie Tracker CLI** is a Java-based command-line application designed to help users monitor their daily and weekly calorie intake. It enables users to log food and drink entries, track macronutrients (protein, carbohydrates, and fats), and compare consumption against personalized fitness goals.
 
-The purpose of the app is to help users track food-related calorie intake, review daily and weekly totals, and stay aware of whether they are meeting, exceeding, or falling short of their calorie goals.
+This application is lightweight, easy to use, and structured to allow future expansion (such as GUI integration or advanced analytics).
 
-3. Target Platform
+---
 
-The system must run as a Java Command Line Interface application.
+## 🎯 Purpose
 
-4. Core Functional Requirements
-   4.1 User Goal Setup
+The purpose of this application is to:
 
-The system must allow the user to:
+* Help users record food and drink consumption
+* Track calorie intake over time
+* Monitor macronutrient distribution
+* Provide feedback on progress toward calorie goals
+* Encourage healthier eating habits through awareness
 
-Set a daily calorie goal
-Set a weekly calorie goal
-Choose a fitness goal:
-Lose weight
-Maintain weight
-Gain weight
-Cut
-Bulk
-4.2 Calorie Entry
+---
 
-The system must allow the user to:
+## 💻 Target Platform
 
-Enter calorie values for food items
-Enter calorie values for drink items
-Save multiple entries per day
-View the sum of all calorie entries for a day
-4.3 Macronutrient Tracking
+* Language: **Java**
+* Interface: **Command Line Interface (CLI)**
+* Environment: Any system capable of running Java (Windows, macOS, Linux)
 
-The system must allow the user to record:
+---
 
-Protein
-Carbohydrates
-Fats
+## ⚙️ Features
 
-The system must store macro values alongside food entries where applicable.
+### 🔧 Core Functionalities
 
-4.4 Daily Tracking
+#### 1. User Goal Setup
 
-The system must:
+Users can configure personal fitness and calorie goals:
 
-Store daily calorie totals
-Display daily calorie intake
-Compare daily intake against the user’s daily goal
-Alert the user when the daily intake goal is not met
-4.5 Weekly Tracking
+* Set **daily calorie goal**
+* Set **weekly calorie goal**
+* Select fitness goal:
 
-The system must:
+  * Lose weight
+  * Maintain weight
+  * Gain weight
+  * Cut
+  * Bulk
 
-Store calorie totals for each day of the week
-Calculate the full weekly calorie total
-Display weekly calorie intake at the end of the week
-Compare weekly intake against the user’s weekly goal
-4.6 Progress Feedback
+---
 
-The system must:
+#### 2. Calorie Entry
 
-Show whether the user is under, over, or on target for calorie goals
-Provide simple alerts or messages when goals are not met
-5. Data Management Requirements
+Users can log consumption details:
 
-The system must support CRUD operations for calorie-related information.
+* Add **food entries**
+* Add **drink entries**
+* Input calorie values
+* Record multiple entries per day
+* Automatically calculate total daily calories
 
-5.1 Create
+---
 
-The system must allow users to create:
+#### 3. Macronutrient Tracking
 
-Food entries
-Drink entries
-Daily calorie records
-Macro records
-Goal settings
-5.2 Read
+Each entry can include:
 
-The system must allow users to view:
+* Protein (grams)
+* Carbohydrates (grams)
+* Fats (grams)
 
-All entries for a selected day
-Daily calorie totals
-Weekly calorie totals
-Current daily and weekly goals
-Stored macro information
-5.3 Update
+All macro values are stored alongside calorie entries.
 
-The system must allow users to:
+---
 
-Edit an existing food or drink entry
-Change calorie values
-Change macro values
-Update daily or weekly calorie goals
-Update fitness goal type
-5.4 Delete
+#### 4. Daily Tracking
 
-The system must allow users to:
+The system:
 
-Delete a food entry
-Delete a drink entry
-Remove incorrect calorie or macro records
-6. Information to Be Stored
+* Stores daily calorie totals
+* Displays total intake for a selected day
+* Compares intake against the daily goal
+* Alerts users if they are:
 
-The application must store the following information:
+  * Under target
+  * Over target
+  * On target
 
-Entry name
-Entry type (food or drink)
-Calories
-Protein
-Carbohydrates
-Fats
-Entry date
-Daily calorie total
-Weekly calorie total
-Daily calorie goal
-Weekly calorie goal
-User fitness goal
-7. Must-Have Features
+---
 
-The minimum required features are:
+#### 5. Weekly Tracking
 
-Calorie input
-Food tracking
-Sum of calorie entries
-Daily calorie tracking
-Weekly calorie display
-Daily or weekly calorie goal setting
-Alerts when intake goal is not met
-Basic macro tracking for protein, carbs, and fats
-Ability to store, update, read, and delete entries
-8. Nice-to-Have Features
+The system:
 
-The following features are optional enhancements:
+* Stores calorie totals for each day
+* Calculates weekly calorie totals
+* Displays weekly summary
+* Compares weekly intake against weekly goals
 
-Calorie recommendations based on whether the user wants to lose, maintain, or gain weight
-Support for cut and bulk modes
-Progress chart
-Graph-based UI in a future version
-9. Non-Functional Requirements
+---
+
+#### 6. Progress Feedback
+
+Users receive:
+
+* Status updates (under, over, on target)
+* Alerts when goals are not met
+* Simple CLI messages for progress tracking
+
+---
+
+## 🗂 Data Management (CRUD Operations)
+
+### Create
+
+Users can create:
+
+* Food entries
+* Drink entries
+* Daily records
+* Macronutrient records
+* Goal settings
+
+---
+
+### Read
+
+Users can view:
+
+* Entries for a selected day
+* Daily calorie totals
+* Weekly calorie totals
+* Current goals
+* Macro breakdowns
+
+---
+
+### Update
+
+Users can:
+
+* Edit food or drink entries
+* Modify calorie values
+* Adjust macro values
+* Update goals
+* Change fitness goal type
+
+---
+
+### Delete
+
+Users can:
+
+* Remove food entries
+* Remove drink entries
+* Delete incorrect calorie or macro records
+
+---
+
+## 🧾 Data Storage
+
+The application stores the following information:
+
+* Entry name
+* Entry type (food or drink)
+* Calories
+* Protein
+* Carbohydrates
+* Fats
+* Entry date
+* Daily calorie total
+* Weekly calorie total
+* Daily calorie goal
+* Weekly calorie goal
+* User fitness goal
+
+---
+
+## ✅ Must-Have Features
+
+* Calorie input system
+* Food & drink tracking
+* Daily calorie summation
+* Daily tracking system
+* Weekly summary display
+* Goal setting (daily & weekly)
+* Alerts for unmet goals
+* Basic macronutrient tracking
+* Full CRUD functionality
+
+---
+
+## ✨ Nice-to-Have Features (Future Enhancements)
+
+* Smart calorie recommendations based on goals
+* Cut/Bulk optimization modes
+* Progress visualization (charts/graphs)
+* GUI-based version
+* Data export (CSV/JSON)
+* Meal categorization (breakfast, lunch, dinner)
+
+---
+
+## 🧩 Non-Functional Requirements
 
 The system should:
 
-Be easy to use from the command line
-Display clear prompts and outputs
-Store data in a structured and maintainable way
-Be organized using good Java programming practices
-Be designed so future GUI or graph features can be added later
-10. Constraints
-    The application must be developed in Java
-    The application must use a CLI interface
-    Graphical charting is not required for the initial version
-11. Success Criteria
+* Be intuitive and easy to use via CLI
+* Provide clear prompts and readable outputs
+* Store data in a structured format
+* Follow clean and maintainable Java coding practices
+* Be designed for scalability and future feature additions
 
-The application is successful if a user can:
+---
 
-Record food and drink calorie intake
-Track macros
-Set calorie goals
-View daily totals
-View weekly totals
-Receive feedback on goal progress
-Manage entries through create, read, update, and delete operations
+## ⚠️ Constraints
+
+* Must be implemented in **Java**
+* Must operate via **Command Line Interface**
+* No graphical charts required in initial version
+
+---
+
+## 🏆 Success Criteria
+
+The application is considered successful if users can:
+
+* Record food and drink intake
+* Track calories and macronutrients
+* Set and modify calorie goals
+* View daily and weekly summaries
+* Receive meaningful feedback on progress
+* Perform full CRUD operations on entries
+
+---
+
+## 🚀 Getting Started (Example)
+
+```bash
+# Compile
+javac Main.java
+
+# Run
+java Main
+```
+
+---
+
+## 📌 Example CLI Flow
+
+```
+Welcome to Calorie Tracker!
+
+1. Set Goals
+2. Add Entry
+3. View Daily Summary
+4. View Weekly Summary
+5. Edit Entry
+6. Delete Entry
+7. Exit
+
+Select an option:
+```
+
+---
+
+## 🧱 Suggested Project Structure
+
+```
+/calorie-tracker
+│── Main.java
+│── models/
+│   ├── Entry.java
+│   ├── Goal.java
+│── services/
+│   ├── TrackerService.java
+│── utils/
+│   ├── InputHandler.java
+│── data/
+│   ├── storage.json
+```
+
+---
+
+## 📈 Future Vision
+
+This CLI application is designed as a foundation for:
+
+* A full-featured desktop or mobile app
+* Integration with fitness APIs
+* Advanced analytics and reporting tools
+
+---
+
+## 📄 License
+
+This project is open-source and available for educational and personal use.
+
+---
