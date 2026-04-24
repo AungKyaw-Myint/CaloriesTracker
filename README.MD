@@ -261,26 +261,6 @@ Welcome to Calorie Tracker!
 Select an option:
 ```
 
----
-
-## 🧱 Suggested Project Structure
-
-```
-/calorie-tracker
-│── Main.java
-│── models/
-│   ├── Entry.java
-│   ├── Goal.java
-│── services/
-│   ├── TrackerService.java
-│── utils/
-│   ├── InputHandler.java
-│── data/
-│   ├── storage.json
-```
-
----
-
 ## 📈 Future Vision
 
 This CLI application is designed as a foundation for:
