@@ -1,4 +1,7 @@
 # Calorie Tracker CLI (Java)
+## 📸 Image Source
+Calorie tracking image from Adobe Stock:  
+https://stock.adobe.com/images/calorie-counting-and-food-with-labels-concept/107597944
 
 ## 📌 Project Overview
 
